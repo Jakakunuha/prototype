@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrangePeak | Digital Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-orange-600 font-bold text-2xl">OrangePeak</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-orange-600 font-medium">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-orange-600 transition">About</a>
+                    <a href="#services" class="text-gray-600 hover:text-orange-600 transition">Services</a>
+                    <a href="#features" class="text-gray-600 hover:text-orange-600 transition">Features</a>
+                    <a href="#projects" class="text-gray-600 hover:text-orange-600 transition">Projects</a>
+                    <a href="#team" class="text-gray-600 hover:text-orange-600 transition">Team</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-orange-600 transition">Pricing</a>
+                    <a href="#contact" class="text-gray-600 hover:text-orange-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden md:hidden fixed w-full bg-white z-40 pt-16">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="#home" class="block px-3 py-2 text-orange-600 font-medium">Home</a>
+            <a href="#about" class="block px-3 py-2 text-gray-600 hover:text-orange-600">About</a>
+            <a href="#services" class="block px-3 py-2 text-gray-600 hover:text-orange-600">Services</a>
+            <a href="#features" class="block px-3 py-2 text-gray-600 hover:text-orange-600">Features</a>
+            <a href="#projects" class="block px-3 py-2 text-gray-600 hover:text-orange-600">Projects</a>
+            <a href="#team" class="block px-3 py-2 text-gray-600 hover:text-orange-600">Team</a>
+            <a href="#pricing" class="block px-3 py-2 text-gray-600 hover:text-orange-600">Pricing</a>
+            <a href="#contact" class="block px-3 py-2 text-gray-600 hover:text-orange-600">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Crafting Digital Experiences</h1>
+                    <p class="text-xl mb-8">We create stunning digital solutions that drive results and captivate audiences.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-white text-orange-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">Get Started</a>
+                        <a href="#services" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-orange-600 transition">Our Services</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="http://static.photos/technology/1024x576/42" alt="Digital Technology" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">About Our Company</h2>
+                    <p class="text-xl text-gray-600 mb-6">We're a team of passionate digital experts dedicated to delivering exceptional results.</p>
+                    <p class="text-gray-600 mb-8">Founded in 2015, OrangePeak has grown from a small startup to a leading digital agency serving clients worldwide. Our approach combines creativity with technical excellence to deliver solutions that make an impact.</p>
+                    <a href="#" class="inline-block border-2 border-orange-600 text-orange-600 px-6 py-3 rounded-lg font-medium hover:bg-orange-600 hover:text-white transition">Learn More</a>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="text-orange-600 text-4xl mb-4">50+</div>
+                        <h3 class="font-bold mb-2">Expert Team</h3>
+                        <p class="text-gray-600">Professionals with diverse skills</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="text-orange-600 text-4xl mb-4">20+</div>
+                        <h3 class="font-bold mb-2">Countries</h3>
+                        <p class="text-gray-600">Projects delivered worldwide</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="text-orange-600 text-4xl mb-4">95%</div>
+                        <h3 class="font-bold mb-2">Satisfaction</h3>
+                        <p class="text-gray-600">Client satisfaction rate</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="text-orange-600 text-4xl mb-4">∞</div>
+                        <h3 class="font-bold mb-2">Creativity</h3>
+                        <p class="text-gray-600">Endless innovative ideas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 text-gray-800">Our Services</h2>
+                <p class="text-xl text-gray-600">Comprehensive digital solutions tailored to your needs</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="text-orange-600 text-4xl mb-4">🖥️</div>
+                    <h3 class="text-xl font-bold mb-3">Web Development</h3>
+                    <p class="text-gray-600 mb-4">Custom websites and web applications built with modern technologies for optimal performance.</p>
+                    <a href="#" class="text-orange-600 font-medium inline-flex items-center">Learn more <span class="ml-1">→</span></a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="text-orange-600 text-4xl mb-4">📱</div>
+                    <h3 class="text-xl font-bold mb-3">Mobile Apps</h3>
+                    <p class="text-gray-600 mb-4">Native and cross-platform mobile applications for iOS and Android platforms.</p>
+                    <a href="#" class="text-orange-600 font-medium inline-flex items-center">Learn more <span class="ml-1">→</span></a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="text-orange-600 text-4xl mb-4">📈</div>
+                    <h3 class="text-xl font-bold mb-3">Digital Marketing</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive strategies to increase your online visibility and customer engagement.</p>
+                    <a href="#" class="text-orange-600 font-medium inline-flex items-center">Learn more <span class="ml-1">→</span></a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="text-orange-600 text-4xl mb-4">🎨</div>
+                    <h3 class="text-xl font-bold mb-3">UI/UX Design</h3>
+                    <p class="text-gray-600 mb-4">Beautiful, intuitive interfaces that enhance user experience and drive conversions.</p>
+                    <a href="#" class="text-orange-600 font-medium inline-flex items-center">Learn more <span class="ml-1">→</span></a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="text-orange-600 text-4xl mb-4">☁️</div>
+                    <h3 class="text-xl font-bold mb-3">Cloud Solutions</h3>
+                    <p class="text-gray-600 mb-4">Scalable cloud infrastructure and services to power your digital transformation.</p>
+                    <a href="#" class="text-orange-600 font-medium inline-flex items-center">Learn more <span class="ml-1">→</span></a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="text-orange-600 text-4xl mb-4">🔒</div>
+                    <h3 class="text-xl font-bold mb-3">Cyber Security</h3>
+                    <p class="text-gray-600 mb-4">Protect your digital assets with our comprehensive security solutions.</p>
+                    <a href="#" class="text-orange-600 font-medium inline-flex items-center">Learn more <span class="ml-1">→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="http://static.photos/technology/1024x576/23" alt="Our Features" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-8 text-gray-800">Why Choose Us</h2>
+                    <div class="space-y-8">
+                        <div class="flex">
+                            <div class="flex-shrink-0 text-orange-600 text-2xl mr-4">✓</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Cutting-Edge Technology</h3>
+                                <p class="text-gray-600">We stay ahead of the curve with the latest tools and frameworks to deliver innovative solutions.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 text-orange-600 text-2xl mr-4">✓</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Client-Centric Approach</h3>
+                                <p class="text-gray-600">Your success is our priority. We tailor our solutions to meet your specific business needs.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 text-orange-600 text-2xl mr-4">✓</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Transparent Process</h3>
+                                <p class="text-gray-600">Clear communication and regular updates ensure you're always in the loop.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 text-orange-600 text-2xl mr-4">✓</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Proven Methodology</h3>
+                                <p class="text-gray-600">Our structured approach delivers results on time and within budget.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 text-gray-800">Our Projects</h2>
+                <p class="text-xl text-gray-600">See some of our recent work</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="http://static.photos/technology/640x360/1" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
+                        <p class="text-gray-600 mb-4">A custom online store with advanced inventory management and payment processing.</p>
+                        <a href="#" class="text-orange-600 font-medium inline-flex items-center">View Case Study <span class="ml-1">→</span></a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="http://static.photos/technology/640x360/2" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Healthcare App</h3>
+                        <p class="text-gray-600 mb-4">Patient management system with telemedicine capabilities for healthcare providers.</p>
+                        <a href="#" class="text-orange-600 font-medium inline-flex items-center">View Case Study <span class="ml-1">→</span></a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="http://static.photos/technology/640x360/3" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">FinTech Dashboard</h3>
+                        <p class="text-gray-600 mb-4">Real-time financial data visualization and analytics platform for investment firms.</p>
+                        <a href="#" class="text-orange-600 font-medium inline-flex items-center">View Case Study <span class="ml-1">→</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-orange-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-700 transition">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 text-gray-800">Meet Our Team</h2>
+                <p class="text-xl text-gray-600">The talented people behind our success</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <img src="http://static.photos/people/320x240/1" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold">Sarah Johnson</h3>
+                    <p class="text-gray-600 mb-2">CEO & Founder</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-orange-600 hover:text-orange-700">Twitter</a>
+                        <a href="#" class="text-orange-600 hover:text-orange-700">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img src="http://static.photos/people/320x240/2" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold">Michael Chen</h3>
+                    <p class="text-gray-600 mb-2">CTO</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-orange-600 hover:text-orange-700">Twitter</a>
+                        <a href="#" class="text-orange-600 hover:text-orange-700">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img src="http://static.photos/people/320x240/3" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold">Emma Rodriguez</h3>
+                    <p class="text-gray-600 mb-2">Creative Director</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-orange-600 hover:text-orange-700">Twitter</a>
+                        <a href="#" class="text-orange-600 hover:text-orange-700">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img src="http://static.photos/people/320x240/4" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold">David Wilson</h3>
+                    <p class="text-gray-600 mb-2">Lead Developer</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-orange-600 hover:text-orange-700">Twitter</a>
+                        <a href="#" class="text-orange-600 hover:text-orange-700">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 text-gray-800">Pricing Plans</h2>
+                <p class="text-xl text-gray-600">Simple, transparent pricing for all budgets</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4 text-center">Starter</h3>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold">$99</span>
+                        <span class="text-gray-600">/month</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><span class="text-orange-600 mr-2">✓</span> Basic Website</li>
+                        <li class="flex items-center"><span class="text-orange-600 mr-2">✓</span> 5 Pages</li>
+                        <li class="flex items-center"><span class="text-orange-600 mr-2">✓</span> Mobile Responsive</li>
+                        <li class="flex items-center"><span class="text-orange-600 mr-2">✓</span> Basic SEO</li>
+                        <li class="flex items-center text-gray-400"><span class="mr-2">✗</span> E-Commerce</li>
+                        <li class="flex items-center text-gray-400"><span class="mr-2">✗</span> Advanced Analytics</li>
+                    </ul>
+                    <a href="#" class="block text-center border-2 border-orange-600 text-orange-600 px-4 py-3 rounded-lg font-medium hover:bg-orange-600 hover:text-white transition">Get Started</a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg border-2 border-orange-600 relative">
+                    <div class="absolute top-0 right-0 bg-orange-600 text-white px-4 py-1 text-sm font-medium rounded-bl-lg">Popular</div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Professional</h3>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold">$299</span>
+                        <span class="text-gray-600">/month</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><span class="text-orange-600 mr-2">✓</span> Custom Website</li>
+                        <li class="flex items-center"><span class="text-orange-600 mr-2">✓</span> 15 Pages</li>
+                        <li class="flex items-center"><span class="text-orange-600 mr-2">✓</span> Mobile Responsive</li>
+                        <li class="flex items-center"><span class="text-orange-600 mr-2">✓</span> Advanced SEO</li>
+                        <li class="flex items-center"><span class="text-orange-600 mr-2">✓</span> Basic E-Commerce</li>
+                        <li class="flex items-center text-gray-400"><span class="mr-2">✗</span> Enterprise Features</li>
+                    </ul>
+                    <a href="#" class="block text-center bg-orange-600 text-white px-4 py-3 rounded-lg font-medium hover:bg-orange-700 transition">Get Started</a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4 text-center">Enterprise</h3>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold">$599</span>
+                        <span class="text-gray-600">/month</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><span class="text-orange-600 mr-2">✓</span> Custom Web App</li>
+                        <li class="flex items-center"><span class="text-orange-600 mr-2">✓</span> Unlimited Pages</li>
+                        <li class="flex items-center"><span class="text-orange-600 mr-2">✓</span> Mobile Responsive</li>
+                        <li class="flex items-center"><span class="text-orange-600 mr-2">✓</span> Premium SEO</li>
+                        <li class="flex items-center"><span class="text-orange-600 mr-2">✓</span> Advanced E-Commerce</li>
+                        <li class="flex items-center"><span class="text-orange-600 mr-2">✓</span> Enterprise Features</li>
+                    </ul>
+                    <a href="#" class="block text-center border-2 border-orange-600 text-orange-600 px-4 py-3 rounded-lg font-medium hover:bg-orange-600 hover:text-white transition">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 text-gray-800">Client Testimonials</h2>
+                <p class="text-xl text-gray-600">What our clients say about us</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="flex items-center mb-6">
+                        <img src="http://static.photos/people/200x200/1" alt="Client" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Jennifer Smith</h4>
+                            <p class="text-gray-600">CEO, TechStart Inc.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"OrangePeak transformed our online presence completely. Their team delivered beyond our expectations with a website that truly represents our brand."</p>
+                    <div class="text-orange-500">
+                        ★★★★★
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="flex items-center mb-6">
+                        <img src="http://static.photos/people/200x200/2" alt="Client" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Robert Johnson</h4>
+                            <p class="text-gray-600">Marketing Director, Global Corp</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"The mobile app they developed for us has significantly improved our customer engagement. Their attention to detail is remarkable."</p>
+                    <div class="text-orange-500">
+                        ★★★★★
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="flex items-center mb-6">
+                        <img src="http://static.photos/people/200x200/3" alt="Client" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Amanda Lee</h4>
+                            <p class="text-gray-600">Founder, HealthPlus</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Working with OrangePeak was a game-changer for our business. Their digital marketing strategy doubled our online leads in just three months."</p>
+                    <div class="text-orange-500">
+                        ★★★★☆
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 text-gray-800">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600">Find answers to common questions</p>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="w-full text-left p-6 font-medium flex justify-between items-center">
+                        <span>What services do you offer?</span>
+                        <span class="text-orange-600 text-xl">+</span>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-gray-600">We offer a comprehensive range of digital services including web development, mobile app development, UI/UX design, digital marketing, cloud solutions, and cybersecurity services. Our team can handle projects of any size and complexity.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="w-full text-left p-6 font-medium flex justify-between items-center">
+                        <span>How long does a typical project take?</span>
+                        <span class="text-orange-600 text-xl">+</span>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-gray-600">Project timelines vary depending on scope and complexity. A simple website might take 2-4 weeks, while a custom web application could take 3-6 months. We provide detailed timelines after our initial consultation and project scoping.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="w-full text-left p-6 font-medium flex justify-between items-center">
+                        <span>What is your pricing structure?</span>
+                        <span class="text-orange-600 text-xl">+</span>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-gray-600">We offer both fixed-price and time-and-materials pricing models depending on project requirements. Our pricing is transparent and we provide detailed quotes upfront. We also offer monthly retainer options for ongoing services.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="w-full text-left p-6 font-medium flex justify-between items-center">
+                        <span>Do you provide ongoing support?</span>
+                        <span class="text-orange-600 text-xl">+</span>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-gray-600">Yes, we offer various support packages ranging from basic maintenance to comprehensive managed services. Our support includes regular updates, security patches, performance monitoring, and 24/7 emergency support for critical issues.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="w-full text-left p-6 font-medium flex justify-between items-center">
+                        <span>How do you ensure quality?</span>
+                        <span class="text-orange-600 text-xl">+</span>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-gray-600">Quality is at the core of everything we do. We follow industry best practices, conduct thorough testing at every stage, and implement quality assurance processes. Our projects go through multiple review cycles before delivery to ensure they meet our high standards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 text-gray-800">Latest From Our Blog</h2>
+                <p class="text-xl text-gray-600">Insights and updates from our team</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="http://static.photos/technology/640x360/4" alt="Blog Post" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-gray-500">June 15, 2023 • Web Development</span>
+                        <h3 class="text-xl font-bold my-2">The Future of Responsive Design</h3>
+                        <p class="text-gray-600 mb-4">Exploring emerging trends and technologies that are shaping the next generation of responsive web experiences.</p>
+                        <a href="#" class="text-orange-600 font-medium inline-flex items-center">Read More <span class="ml-1">→</span></a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="http://static.photos/technology/640x360/5" alt="Blog Post" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-gray-500">May 28, 2023 • Digital Marketing</span>
+                        <h3 class="text-xl font-bold my-2">SEO Strategies for 2023</h3>
+                        <p class="text-gray-600 mb-4">Key SEO techniques and algorithm updates you need to know to improve your search rankings this year.</p>
+                        <a href="#" class="text-orange-600 font-medium inline-flex items-center">Read More <span class="ml-1">→</span></a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="http://static.photos/technology/640x360/6" alt="Blog Post" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-gray-500">April 10, 2023 • UI/UX Design</span>
+                        <h3 class="text-xl font-bold my-2">Designing for Accessibility</h3>
+                        <p class="text-gray-600 mb-4">Practical tips and guidelines for creating digital products that are inclusive and accessible to all users.</p>
+                        <a href="#" class="text-orange-600 font-medium inline-flex items-center">Read More <span class="ml-1">→</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-orange-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-700 transition">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+                    <p class="text-xl mb-8">Have a project in mind or want to learn more about our services? We'd love to hear from you.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-2xl mr-4">📍</div>
+                            <div>
+                                <h3 class="font-bold mb-1">Our Office</h3>
+                                <p>123 Tech Street, Silicon Valley, CA 94025</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-2xl mr-4">✉️</div>
+                            <div>
+                                <h3 class="font-bold mb-1">Email Us</h3>
+                                <p>info@orangepeak.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-2xl mr-4">📞</div>
+                            <div>
+                                <h3 class="font-bold mb-1">Call Us</h3>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-6 mt-8">
+                        <a href="#" class="text-white hover:text-gray-200 text-2xl">Facebook</a>
+                        <a href="#" class="text-white hover:text-gray-200 text-2xl">Twitter</a>
+                        <a href="#" class="text-white hover:text-gray-200 text-2xl">LinkedIn</a>
+                        <a href="#" class="text-white hover:text-gray-200 text-2xl">Instagram</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-800">Send Us a Message</h3>
+                        <form>
+                            <div class="grid grid-cols-1 gap-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 font-medium mb-2">Your Email</label>
+                                    <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500">
+                                </div>
+                                <div>
+                                    <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                                    <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500">
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                                    <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="w-full bg-orange-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-700 transition">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">OrangePeak</h3>
+                    <p class="text-gray-400 mb-4">Innovative digital solutions that drive results and exceed expectations.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+                        <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-white">Projects</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Web Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Mobile Apps</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">UI/UX Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest updates and insights.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your Email" class="px-4 py-2 rounded-l-lg w-full focus:outline-none text-gray-800">
+                        <button type="submit" class="bg-orange-600 text-white px-4 py-2 rounded-r-lg hover:bg-orange-700">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 OrangePeak. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-orange-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-orange-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+</body>
+</html>
